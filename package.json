@@ -16,6 +16,9 @@
     "typescript": "^4.5.3",
     "web-vitals": "^1.1.2"
   },
+  "devDependencies": {
+    "prettier": "^2.5.1"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

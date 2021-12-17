@@ -1,13 +1,21 @@
 import React from 'react';
 
 import './App.css';
+import {Counter} from "./components/Counter";
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Appen</h1>
-    </div>
-  );
+const App: React.FC = () => {
+    return (
+        <div>
+            <Counter>
+                {({ count, setCount }) => (
+                    <div>
+                        <button onClick={() => setCount(count + 1)}>Increment</button>
+                            {`>> ${count} <<`}
+                        <button onClick={() => setCount(count - 1)}>Decrement</button>
+                    </div>
+                )}
+            </Counter>
+        </div>
+    );
 }
-
 export default App;
